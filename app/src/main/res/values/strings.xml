@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_example">Domperidone</string>
+    <string name="time_example">10:00 AM</string>
+    <string name="pills_example">2 pills</string>
+    <string name="eat_example">After eat</string>
+
+
+
+    <string name="drop_files_or_click_to_upload_string">Click to upload</string>
+    <string name="update">Update</string>
+    <string name="image_uploaded">Image Uploaded</string>
+    <string name="change_photo">change photo</string>
+    <string name="amount">Amount?</string>
+    <string name="notification">Notification</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="14dp" />
+    <item android:drawable="@drawable/radio_active" android:state_checked="true"/>
+    <item android:drawable="@drawable/radio_normal" android:state_checked="false"/>
+    <solid android:color="@color/rectangle_20_color" />
+</selector>

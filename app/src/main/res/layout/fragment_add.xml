@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/headerbg"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Plan"
+            android:textColor="#0A0909"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textColor="#0A0909"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.155" />
+
+
+        <EditText
+            android:id="@+id/medicinename"
+            android:layout_width="332dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle_4_shape"
+            android:hint="Medicine Name"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="#767676"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:layout_marginBottom="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:layout_marginLeft="30dp"
+            android:textColor="#0A0909"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicinename" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="151dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rectangle_4_shape"
+            android:hint="Amount"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="#767676"
+
+            app:layout_constraintEnd_toStartOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food and Pills"
+            android:textColor="#0A0909"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amount"
+            app:layout_constraintVertical_bias="0.047" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="361dp"
+            android:layout_height="74dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/op3"
+                android:layout_width="95dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/rectangle_20_color"
+                android:checked="false"
+                android:text="Before eat"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/op2"
+                android:layout_width="97dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/rectangle_20_color"
+                android:checked="false"
+                android:text="While eat"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/op5"
+                android:layout_width="96dp"
+                android:layout_height="38dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/rectangle_20_color"
+                android:checked="false"
+                android:text="After eat"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:textColor="#0A0909"
+            android:textSize="16sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/medicinename" />
+
+
+        <RelativeLayout
+            android:id="@+id/cardView"
+            android:layout_width="151dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rectangle_4_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/amount"
+            app:layout_constraintTop_toBottomOf="@+id/notification">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Set Time"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Medicine Photo"
+            android:textColor="#0A0909"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+          />
+
+        <RelativeLayout
+            android:id="@+id/rectangle_21"
+            android:layout_width="322dp"
+            android:layout_height="119dp"
+            android:background="@drawable/rectangle_21_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upload"
+            app:layout_constraintVertical_bias="0.14">
+
+            <TextView
+                android:id="@+id/drop_files_or_click_to_upload"
+                android:layout_width="195.4dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="77dp"
+                android:layout_marginBottom="61dp"
+                android:gravity="center"
+                android:text="@string/drop_files_or_click_to_upload_string"
+                android:textAlignment="center"
+                android:textColor="@color/amount_color"
+                android:textSize="17sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBrowse"
+                android:layout_width="98dp"
+                android:layout_height="26dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="127dp"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/rectangle_29_shape"
+                android:text="Browse"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_3_ek1_shape"
+            android:text="Delete"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_3_shape"
+            android:text="Save"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/delete_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
